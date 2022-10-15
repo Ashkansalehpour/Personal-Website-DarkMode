@@ -13,15 +13,14 @@
 
 :root{
   --blue:-webkit-linear-gradient(0deg, #000d8a 0%, #035f9e 100%);
-  --white:#1a1d1e;
-  --black: #f9f6f2;
-  --gray: #020202;
-  --gray-fonts:#eae6e0;
+  --black:#1a1d1e;
+  --white: #f9f6f2;
+  --dark: #020202;
+  --gray-font:#eae6e0;
   --shadow: #8490ff4d 0px 20px 20px 0px;
-  --blackshadow:#535cab4d 0px 20px 20px 0px;;
-  --whitesmoke:#212324;
+  --pale-black:#212324;
   --purple: #8490ff;
-  --white-fonts:#ffffff;
+  --white-font:#ffffff;
 }
 
 
@@ -212,7 +211,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: var(--gray);
+  background-color: var(--dark);
 }
 
 .container {
@@ -232,12 +231,12 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 /* Header */
 header {
-  background-color: var(--white);
+  background-color: var(--blac);
 }
 
 header .container {
@@ -269,7 +268,7 @@ header nav > ul > li:hover > ul {
 }
 
 header nav > ul > li > ul {
-  background-color:var(--gray);
+  background-color:var(--dark);
   padding: 7px;
   width: max-content;
   box-shadow: 0 0 40px -3px rgb(197, 197, 197);
@@ -295,7 +294,7 @@ header nav > ul > li > ul > li > a {
 
 /* Start introduction Section */
 .introduction {
-  background-color: var(--gray);
+  background-color: var(--dark);
   height: 683px;
 }
 .left-introduction {
@@ -305,20 +304,20 @@ header nav > ul > li > ul > li > a {
 .left-introduction h6 {
   font-family: Poppins-regular;
   font-size: 14px;
-  color: var(--black);
+  color: var(--white);
   letter-spacing: 2px;
 }
 .left-introduction h1 {
   font-family: Poppins-SemiBold;
   font-size: 60px;
-  color: var(--black);
+  color: var(--white);
   margin-top: -28px;
 }
 .left-introduction p {
   width: 480px;
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   padding-bottom: 20px;
   margin-top: -28px;
 }
@@ -352,25 +351,25 @@ header nav > ul > li > ul > li > a {
 .right-about h6 {
   font-family: Poppins-regular;
   font-size: 14px;
-  color: var(--black);
+  color: var(--white);
 }
 .right-about h1 {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
   margin-top: -10px;
 }
 .right-about p {
   width: 480px;
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   margin-bottom: 40px;
 }
 .right-about a {
   font-family: Poppins-medium;
   font-size: 14px;
-  color: var(--gray);
+  color: var(--dark);
   background: var(--blue);
   padding: 15px 30px;
   transition: .3s;
@@ -397,13 +396,13 @@ header nav > ul > li > ul > li > a {
 .service-title h1 {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
 }
 .service-title p {
   width: 630px;
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   margin: 0 auto;
   margin-top: -25px;
 }
@@ -419,18 +418,18 @@ header nav > ul > li > ul > li > a {
 }
 .introduction-service i {
   font-size: 35px;
-  color: var(--black);
+  color: var(--white);
 }
 .introduction-service h4 {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: var(--black);;
+  color: var(--white);;
 }
 .introduction-service p {
   width: 300px;
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 /* End introduction Section */
 
@@ -464,7 +463,7 @@ header nav > ul > li > ul > li > a {
 }
 .num-container {
   text-align: center;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 .num-container span:last-of-type {
   font-family: Poppins-light;
@@ -526,12 +525,12 @@ header nav > ul > li > ul > li > a {
 .title-featured-projects h1 {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
 }
 .title-featured-projects p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   margin-top: -20px;
 }
 .menu-featured-projects {
@@ -582,13 +581,13 @@ header nav > ul > li > ul > li > a {
 .project-image h4 {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 1px;
 }
 .project-image span {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 #project-image1 img,
 #project-image2 img,
@@ -637,7 +636,7 @@ header nav > ul > li > ul > li > a {
 
 /* Start Client Section */
 .Client {
-  background-color: var(--gray);
+  background-color: var(--dark);
   height: 460px;
   padding-top: 60px;
   margin-top: 125px;
@@ -649,12 +648,12 @@ header nav > ul > li > ul > li > a {
 .Client-title h1 {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
 }
 .Client-title p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   margin-top: -25px;
 }
 
@@ -667,7 +666,7 @@ header nav > ul > li > ul > li > a {
 .comment2 {
   width: 530px;
   height: 170px;
-  background-color: var(--white);
+  background-color: var(--blac);
 }
 .comment1 img,
 .comment2 img {
@@ -680,7 +679,7 @@ header nav > ul > li > ul > li > a {
 .comment2 p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   padding-left: 15%;
   width: 450px;
 }
@@ -688,7 +687,7 @@ header nav > ul > li > ul > li > a {
 .comment2 h4 {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: var(--black);
+  color: var(--white);
   padding-left: 15%;
   margin-top: -3px;
 }
@@ -708,7 +707,7 @@ header nav > ul > li > ul > li > a {
 .arrows i {
   padding-top: 15px;
   font-size: 13px;
-  color: var(--black);
+  color: var(--white);
 }
 .arrow1,
 .arrow2 {
@@ -732,7 +731,7 @@ header nav > ul > li > ul > li > a {
 }
 .arrow1:hover i,
 .arrow2:hover i {
-  color: var(--white);
+  color: var(--blac);
   transition: all 0.2s;
 }
 /* End Client Section */
@@ -745,12 +744,12 @@ header nav > ul > li > ul > li > a {
 .plan-desc h1 {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
 }
 .plan-desc p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   margin: -25px;
 }
 .plan-selection {
@@ -762,7 +761,7 @@ header nav > ul > li > ul > li > a {
 #buy-plan2,
 #buy-plan3,
 #buy-plan4 {
-  background-color: var(--gray);
+  background-color: var(--dark);
   width: 270px;
   height: 530px;
   display: flex;
@@ -798,40 +797,40 @@ header nav > ul > li > ul > li > a {
 #buy-plan2:hover .secend-circle span,
 #buy-plan3:hover .secend-circle span,
 #buy-plan4:hover .secend-circle span {
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 #buy-plan1:hover h1,
 #buy-plan2:hover h1,
 #buy-plan3:hover h1,
 #buy-plan4:hover h1 {
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 #buy-plan1:hover p,
 #buy-plan2:hover p,
 #buy-plan3:hover p,
 #buy-plan4:hover p {
-  color:  var(--gray-fonts);
+  color:  var(--gray-font);
   transition: all 0.1s;
 }
 #buy-plan1:hover h2,
 #buy-plan2:hover h2,
 #buy-plan3:hover h2,
 #buy-plan4:hover h2 {
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   transition: all 0.1s;
 }
 #buy-plan1:hover h3,
 #buy-plan2:hover h3,
 #buy-plan3:hover h3,
 #buy-plan4:hover h3 {
-  color:  var(--gray-fonts);
+  color:  var(--gray-font);
   transition: all 0.1s;
 }
 #buy-plan1:hover h4,
 #buy-plan2:hover h4,
 #buy-plan3:hover h4,
 #buy-plan4:hover h4 {
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   transition: all 0.1s;
 }
 #buy-plan1:hover .plan-price,
@@ -853,7 +852,7 @@ header nav > ul > li > ul > li > a {
   display: inline-block;
   width: 225px;
   height: 35px;
-  background-color:  var(--gray);
+  background-color:  var(--dark);
   padding-top: 5%;
   position: absolute;
   bottom: 4%;
@@ -882,13 +881,13 @@ header nav > ul > li > ul > li > a {
 .secend-circle span {
   font-family: Poppins-light;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
   margin: 0 auto;
 }
 .desc-plan h1 {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: var(--black);
+  color: var(--white);
   position: absolute;
   top: 36%;
   left: 35.5%;
@@ -896,7 +895,7 @@ header nav > ul > li > ul > li > a {
 .desc-plan p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   position: absolute;
   top: 42%;
   left: 28.5%;
@@ -904,7 +903,7 @@ header nav > ul > li > ul > li > a {
 .desc-plan h2 {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   width: 225px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -917,7 +916,7 @@ header nav > ul > li > ul > li > a {
 .desc-plan h3 {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   width: 225px;
   border-bottom: 1px solid #eee;
   padding-top: 12px;
@@ -929,7 +928,7 @@ header nav > ul > li > ul > li > a {
 .desc-plan h4 {
   font-family: Poppins-light;
   font-size: 14px;
-  color:var(--gray-fonts);
+  color:var(--gray-font);
   width: 225px;
   border-bottom: 1px solid #eee;
   padding-top: 12px;
@@ -941,20 +940,20 @@ header nav > ul > li > ul > li > a {
 .plan-price {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
   position: absolute;
   bottom: 1%;
 }
 .buy-plan-btn span {
   font-family: Poppins-SemiBold;
   font-size: 14px;
-  color: var(--black);
+  color: var(--white);
 }
 /* End Planning Section */
 
 /* Start post-blog Section */
 .post-blog {
-  background-color: var(--whitesmoke);
+  background-color: var(--pale-black);
   margin-top: 120px;
   padding-top: 100px;
 }
@@ -964,12 +963,12 @@ header nav > ul > li > ul > li > a {
 .title-post-blog h1 {
   font-family: Poppins-SemiBold;
   font-size: 36px;
-  color: var(--black);
+  color: var(--white);
 }
 .title-post-blog p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   margin: 0 auto;
   width: 720px;
 }
@@ -993,7 +992,7 @@ header nav > ul > li > ul > li > a {
 .left-comment-post a {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--black);
+  color: var(--white);
   padding-left: 10px;
 }
 .right-comment-post {
@@ -1002,7 +1001,7 @@ header nav > ul > li > ul > li > a {
 .right-comment-post span {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   padding-left: 8px;
 }
 .desc-comment-post {
@@ -1011,13 +1010,13 @@ header nav > ul > li > ul > li > a {
 .desc-comment-post a {
   font-family: Poppins-SemiBold;
   font-size: 18px;
-  color: var(--black);
+  color: var(--white);
   width: 360px;
 }
 .desc-comment-post p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   width: 360px;
 }
 #post1 p,
@@ -1025,7 +1024,7 @@ header nav > ul > li > ul > li > a {
 #post3 p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 .image-post {
   overflow: hidden;
@@ -1083,7 +1082,7 @@ header nav > ul > li > ul > li > a {
 
 /* Start Footer section */
 footer {
-  background-color: var(--white);
+  background-color: var(--blac);
   height: 400px;
 }
 .footer-row {
@@ -1094,30 +1093,30 @@ footer {
 footer h4 {
   font-family: Poppins-medium;
   font-size: 18px;
-  color: var(--white-fonts);
+  color: var(--white-font);
 }
 footer a {
   color:v;
 }
 footer span {
-  color:var(--white-fonts);
+  color:var(--white-font);
 }
 footer i {
-  color:var(--white-fonts);
+  color:var(--white-font);
 }
 .about-part-footer p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
   width: 450px;
 }
 .about-part-footer i {
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 .about-part-footer span {
   font-family: Poppins-light;
   font-size: 14px;
-  color:var(--gray-fonts);
+  color:var(--gray-font);
 }
 .about-part-footer a {
   font-family: Poppins-light;
@@ -1127,7 +1126,7 @@ footer i {
 .Newsletter-part-footer p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 .email-input input {
   font-family: Poppins-light;
@@ -1161,7 +1160,7 @@ footer i {
 .Follow-part-footer p {
   font-family: Poppins-light;
   font-size: 14px;
-  color: var(--gray-fonts);
+  color: var(--gray-font);
 }
 .Follow-part-footer i {
   padding-left: 11px;
